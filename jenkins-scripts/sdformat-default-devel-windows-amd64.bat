@@ -7,6 +7,7 @@ set PLATFORM_TO_BUILD=x86_amd64
 set IGN_CLEAN_WORKSPACE=true
 
 set DEPEN_PKGS="libxml2 tinyxml2"
+set KEEP_WORKSPACE=TRUE
 
 for /f %%i in ('python "%SCRIPT_DIR%\tools\detect_cmake_major_version.py" "%WORKSPACE%\%VCS_DIRECTORY%\CMakeLists.txt"') do set SDFORMAT_MAJOR_VERSION=%%i
 
