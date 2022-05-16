@@ -54,7 +54,7 @@ class GenericAnyJobGitHub
         configure { project ->
           project  / triggers / 'org.jenkinsci.plugins.ghprb.GhprbTrigger' {
               adminlist 'osrf-jenkins j-rivero'
-              orgslist 'osrf gazebosim'
+              orgslist 'osrf ignitionrobotics'
               allowMembersOfWhitelistedOrgsAsAdmin(true)
               useGitHubHooks(true)
               onlyTriggerPhrase(false)
